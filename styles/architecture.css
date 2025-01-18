@@ -140,6 +140,9 @@ border-radius: 8px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.featured-architect img{
+  width: 100%;
+}
 /* some fact related style */
 .fact-card{
   border: 1px solid rgba(255, 144, 14, 1);
@@ -173,10 +176,17 @@ border-radius: 8px;
   height: 50px;
 }
 #exprience-badge{
-
+  padding: 45px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: -100px; 
+  margin-top: -100px;
+  
 }
-#{
-  ecprience-year
+#exprience-year{
+  font-size: 4rem;
+  font-weight: bold;
+
 }
 /* Our Sponspors related style */
 .Sponspors-info{
@@ -196,8 +206,8 @@ grid-template-columns: repeat(5,1fr);
 @media screen and (max-width:576px) {
   .navber,
   .nav-links,
-  .teams
-  
+  .teams,
+  .features
   {
     flex-direction: column;
   }
@@ -215,12 +225,15 @@ grid-template-columns: repeat(5,1fr);
   justify-items: center;
   gap: 24px;
   }
-  
+  #exprience-badge{
+    margin-top: 20px;
+    margin-left: 20px;
+  }
 }
 
 /* medium size device */
 @media screen and (min-width: 576px ) and (max-width:992px) {
-  .teams{flex-direction: column;
+  .teams,.features {flex-direction: column;
     
   }
   .our-features{
@@ -232,7 +245,10 @@ grid-template-columns: repeat(5,1fr);
     gap: 50px;
   }
   
-  
+  #exprience-badge{
+    margin-top: 20px;
+    margin-left: 20px;
+  }
 
   
 }
